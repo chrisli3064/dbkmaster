@@ -37,6 +37,7 @@ import Diversions from './components/Diversions';
 import Opinion from './components/Opinion';
 import NewsTabsNavigator from './components/NewsTabNavigator';
 import NewsTabNavigator from './components/NewsTabNavigator';
+import Other from './components/Other';
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -99,10 +100,10 @@ function App(): JSX.Element {
           }}
         />
         <Tab.Screen
-          name="Sports"
-          component={Sports}
+          name="temp"
+          component={Other}
           options={{
-            title: 'Sports',
+            title: 'temp',
             tabBarIcon: ({size, color}) => (
               <Icon name="football" size={size} color={color} />
             ),
@@ -115,10 +116,10 @@ function App(): JSX.Element {
           }}
         />
         <Tab.Screen
-          name="Diversions"
-          component={Diversions}
+          name="temp2"
+          component={Other}
           options={{
-            title: 'Diversions',
+            title: 'temp2',
             tabBarIcon: ({size, color}) => (
               <Icon name="newspaper" size={size} color={color} />
             ),
@@ -131,10 +132,10 @@ function App(): JSX.Element {
           }}
         />
         <Tab.Screen
-          name="Opinions"
-          component={Opinion}
+          name="temp3"
+          component={Other}
           options={{
-            title: 'Opinions',
+            title: 'temp3',
             tabBarIcon: ({size, color}) => (
               <Icon name="text-long" size={size} color={color} />
             ),
